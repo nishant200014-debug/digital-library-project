@@ -10,7 +10,7 @@
 
 <!-- ===== NAVBAR START ===== -->
 <header>
-  <h2>MySite</h2>
+  <h2>BookVerse</h2>
   <nav>
     <a href="#home">Home</a>
     <a href="#about">About</a>
@@ -74,7 +74,14 @@
 <!-- ===== ABOUT SECTION START ===== -->
 <section id="about" class="about">
   <h2>About Us</h2>
-  <p>This section contains information about the website or company.</p>
+  <div class="bookpages">
+
+    <div class="page1">
+      
+    </div>
+  </div>
+  
+  
 </section>
 <!-- ===== ABOUT SECTION END ===== -->
 
@@ -117,12 +124,18 @@
 
 
 <!-- ===== CONTACT SECTION START ===== -->
-<section id="contact" class="contact">
-  <h2>Contact Us</h2>
-  <input type="text" placeholder="Your Name"><br>
-  <input type="email" placeholder="Your Email"><br>
-  <textarea placeholder="Your Message"></textarea><br>
-  <button>Send</button>
+<section id="contact" class="contact-container">
+  <form action="https://api.web3forms.com/submit" method="post" class="contact-left">
+    <div class="contact-left-title">
+        <h2>Contact Us</h2>
+        <hr>
+    </div>
+    <input type="hidden" name="access_key" value="ab8c305d-7246-429d-8fba-8be991c8b3bd">
+    <input type="text" name="name" placeholder="Your Name" class="contact-input" required>
+    <input type="email" name="email" placeholder="Your Email" class="contact-input" required>
+    <textarea name="message" placeholder="Your Message"  class="contact-input"></textarea>
+    <button type="submit">Submit</button>
+</form>
 </section>
 <!-- ===== CONTACT SECTION END ===== -->
 

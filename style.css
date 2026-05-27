@@ -277,10 +277,12 @@
       margin-bottom: 20px;
     }
 
-    .about p {
-      max-width: 600px;
-      /* margin: auto; */
-      color: #000;
+    .bookpages{
+      background-color: #1e293b;
+    }
+
+    .page1{
+
     }
     /* ===== ABOUT SECTION END ===== */
 
@@ -358,28 +360,86 @@
 
 
     /* ===== CONTACT SECTION START ===== */
-    .contact {
-      padding: 80px 20px;
-      text-align: center;
-      background: #1e293b;
-    }
-
-    .contact input, .contact textarea {
-      width: 300px;
-      padding: 10px;
-      margin: 10px;
+    .contact-container{
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+  }
+  
+  .contact-left{
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 20px;
+  }
+  
+  
+  .contact-left-title h2{
+      font-weight: 600;
+      background: linear-gradient(to right,#a363aa,#7a3f6d);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 40px;
+      margin-bottom: 5px;
+  }
+  .contact-left-title hr{
       border: none;
-      border-radius: 5px;
-    }
-
-    .contact button {
-      padding: 10px 20px;
+      width: 120px;
+      height: 5px;
+      background: linear-gradient(to right,#a363aa,#7a3f6d) ;
+      border-radius: 10px;
+      margin-bottom: 20px;
+  }
+  
+  .contact-input{
+      width: 400px;
+      height: 50px;
       border: none;
-      background: #22c55e;
-      color: black;
-      border-radius: 5px;
+      outline: none;
+      padding-left: 25px;
+      font-weight: 500;
+      color: #666;
+      border-radius: 50px;
+  }
+  .contact-left textarea{
+      height: 140px;
+      padding-top: 15px;
+      border-radius: 20px;
+  }
+  
+  .contact-input:focus{
+      border: 2px solid #F3BD12;
+  }
+  
+  .contact-input::placeholder{
+      color: #a9a9a9;
+  }
+  
+  .contact-left button{
+      display: flex;
+      align-items: center;
+      padding: 15px 30px;
+      font-size: 16px;
+      color: #fff;
+      gap: 10px;
+      border: none;
+      border-radius: 50px;
+      background: linear-gradient(to bottom right,#ffa2a6,#f86a84);
       cursor: pointer;
-    }
+  }
+  .contact-right img{
+      width:550px ;
+  }
+  
+  @media (max-width:800px){
+      .contact-input{
+          width: 80vw;
+      }
+      .contact-right{
+          display: none;
+      }
+  }
     /* ===== CONTACT SECTION END ===== */
 
 
